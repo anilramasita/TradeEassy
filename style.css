@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color:white;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlo8WfO13TtdRZQpJ8lWSatYg8I1jdb88wSg&s");
+    background-size: cover;
+}
+.section {
+    margin-bottom: 30px;
+           
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+label {
+    margin-top: 10px;
+}
+button {
+    margin-top: 20px;
+}
+.output {
+    margin-top: 20px;
+}

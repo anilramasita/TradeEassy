@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeEassy</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <h1>TradeEassy</h1>
+
+    <!-- Login Section -->
+    <div class="section" id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="pin">Enter PIN:</label>
+            <input type="password" id="pin" name="pin" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
+
+    <!-- Trading Options -->
+    <div class="section" id="trading-section" style="display: none;">
+        <h2>Trading Options</h2>
+        <button id="buy-stock-btn">Buy Stock</button>
+        <button id="sell-stock-btn">Sell Stock</button>
+        <button id="view-portfolio-btn">View Portfolio</button>
+        <button id="view-transaction-btn">View Transaction History</button>
+        <button id="profit-loss-btn">Check Profit/Loss</button>
+        <button id="live-chart-btn">View Live Stock Chart</button>
+    </div>
+
+   <!-- Buy Stock Section -->
+<div class="section" id="buy-stock-section" style="display: none;">
+    <h2>Buy Stock</h2>
+    <form id="buy-stock-form">
+        <label for="buy-ticker">Stock Ticker:</label>
+        <input type="text" id="buy-ticker" name="buy-ticker" required>
+        <div id="chart-link" style="margin-top: 10px;"></div> <!-- New div for chart link -->
+        <label for="buy-price">Stock Price:</label>
+        <input type="number" id="buy-price" name="buy-price" required>
+        <label for="buy-quantity">Quantity:</label>
+        <input type="number" id="buy-quantity" name="buy-quantity" required>
+        <button type="submit">Buy Stock</button>
+    </form>
+    <div id="buy-message"></div>
+</div>
+
+    <!-- Sell Stock Section -->
+    <div class="section" id="sell-stock-section" style="display: none;">
+        <h2>Sell Stock</h2>
+        <form id="sell-stock-form">
+            <label for="sell-ticker">Stock Ticker:</label>
+            <input type="text" id="sell-ticker" name="sell-ticker" required>
+            
+            <div id="chart-link2" style="margin-top: 10px;"></div> 
+
+            <label for="sell-price">Price to Sell:</label>
+            <input type="number" id="sell-price" name="sell-price" required>
+            <label for="sell-quantity">Quantity to Sell:</label>
+            <input type="number" id="sell-quantity" name="sell-quantity" required>
+            <button type="submit">Sell Stock</button>
+        </form>
+        <div id="sell-message"></div>
+    </div>
+
+    <!-- Output Section for Portfolio, Transactions, and Profit/Loss -->
+    <div class="section output" id="portfolio-section" style="display: none;">
+        <h2>Portfolio</h2>
+        <div id="portfolio"></div>
+    </div>
+
+    <div class="section output" id="transaction-section" style="display: none;">
+        <h2>Transaction History</h2>
+        <div id="transaction-history"></div>
+    </div>
+
+    <div class="section output" id="profit-loss-section" style="display: none;">
+        <h2>Profit/Loss Status</h2>
+        <div id="profit-loss-status"></div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
