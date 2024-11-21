@@ -1,0 +1,2 @@
+xampp for mysql and php code
+vs code or any other code editor
