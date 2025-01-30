@@ -1,3 +1,4 @@
+# STEP BY STEP PROCEDURE TO EXECUTE THE PROJECT
 1. Install all requirements.txt file
 2. Create a database with name trading_db
 3. Perform trading_db.sql commands on your database
