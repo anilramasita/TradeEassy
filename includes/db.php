@@ -1,10 +1,10 @@
 <?php
 // includes/db.php
 
-$host = 'localhost';
-$db = 'trading_db';
-$user = 'root';
-$password = '';
+$host = 'sql101.infinityfree.com';
+$db = 'if0_38251626_trading_db';
+$user = 'if0_38251626';
+$password = 'kEnvamoZXbYVVKa';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db", $user, $password);
